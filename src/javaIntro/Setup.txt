@@ -1,0 +1,66 @@
+Java Installation & Setup Guide
+==============================
+
+1. JDK Installation
+-------------------
+- Download the latest JDK (Java Development Kit) from Oracle or OpenJDK
+- Recommended version: JDK 21 (LTS) or JDK 17 (LTS)
+- Installation process:
+  * Windows: Run .exe installer and set JAVA_HOME variable
+  * macOS: Use .dmg package or Homebrew (brew install openjdk)
+  * Linux: Use package manager (apt-get/yum) or manual tarball
+
+2. IDE Setup
+-----------
+Popular Java IDEs:
+- IntelliJ IDEA (Recommended): Community Edition is free
+- Eclipse: Classic Java IDE with extensive plugins
+- VS Code: Lightweight option with Java Extension Pack
+
+Installation steps:
+1. Download IDE of choice
+2. Install Java support plugins if needed
+3. Configure JDK path in IDE settings
+
+3. Build Tools
+--------------
+Maven Setup:
+1. Download from Apache Maven site
+2. Set MAVEN_HOME environment variable
+3. Add Maven bin to PATH
+4. Verify with 'mvn -v' command
+
+4. Java Version Overview
+------------------------
+Key versions:
+- Java 8 (LTS): Lambdas, Stream API
+- Java 11 (LTS): HTTP Client, var keyword
+- Java 17 (LTS): Sealed classes, pattern matching
+- Java 21 (LTS): Virtual threads, record patterns
+
+5. First Java Program
+---------------------
+1. Create HelloWorld.java:
+   public class HelloWorld {
+       public static void main(String[] args) {
+           System.out.println("Hello, World!");
+       }
+   }
+
+2. Compile: javac HelloWorld.java
+3. Run: java HelloWorld
+
+6. Java Syntax Basics
+---------------------
+- Case sensitive
+- Class names: PascalCase (MyClass)
+- Method names: camelCase (myMethod)
+- Constants: UPPER_SNAKE_CASE
+- Semicolon required after statements
+- Curly braces for code blocks
+- Main method as entry point
+
+Tips:
+- Use 'var' for local variables (Java 10+)
+- Follow Oracle Code Conventions
+- Enable IDE auto-formatting
