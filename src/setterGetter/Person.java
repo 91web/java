@@ -1,4 +1,4 @@
-package objectMode;
+package setterGetter;
 
 import java.util.Objects;
 

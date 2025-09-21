@@ -1,11 +1,11 @@
-package objectMode;
+package setterGetter;
 
 public class Car   {
    private String color;
    private final String model;
    private  int year;
 
-   //contructor
+   //constructor
      public Car(String color, String model, int year){
         this.color = color;
         this.model = model;
