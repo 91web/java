@@ -18,25 +18,28 @@ public class Account {
         this.balance = balance;
     }
 
+
     //Method deposit
-    public double deposit(double amount){
-        if (amount >= 0){
-        return balance+ amount;
-        }
-        else{
+
+    // Method deposit
+    public double deposit(double amount) {
+        if (amount >= 0) {
+            setBalance(balance + amount);
+        } else {
             System.out.println("Amount is less than Zero");
         }
-        return balance;
+        return amount;
     }
-    public double withDraw( double amount){
-        if (balance < amount){
+
+    // Method withdraw
+    public double withDraw(double amount) {
+        if (balance < amount) {
             System.out.println("Insufficient fund");
-        }else if (amount< 0) {
+        } else if (amount < 0) {
             System.out.println("Amount must be greater than 0, You cannot withdraw less than Zero Amount");
+        } else {
+            setBalance(balance - amount);
         }
-            else {
-            return balance - amount;
-        }
-        return 0;
+        return amount;
     }
 }

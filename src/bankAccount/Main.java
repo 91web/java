@@ -31,8 +31,6 @@ public class Main {
                 break;                              // good input → leave loop
             }
         }
-
-
         //Account
         Account acct = new Account(5000.44);
 
@@ -54,11 +52,11 @@ public class Main {
         if (choice == 1 ) {
             double balance = acct.deposit(deposit);
             if (deposit > 0) {
-                System.out.println("You have successfully deposited " + deposit + " into your account now total " + balance + " previous balance is " + acct.getBalance());
+                System.out.println("You have successfully deposited " + deposit + " balance is " + acct.getBalance());
             }  } else {
             double balance = acct.withDraw(withDraw);
             if (withDraw > 0) {
-                System.out.println("You have successfully withdraw " + withDraw + " from your account now total " + balance + " previous balance is " + acct.getBalance());
+                System.out.println("You have successfully withdraw " + withDraw +  " balance is " + acct.getBalance());
             }  }
     }
 }
