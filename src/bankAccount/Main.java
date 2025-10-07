@@ -50,11 +50,12 @@ public class Main {
 
         // Choice
         if (choice == 1 ) {
-            double balance = acct.deposit(deposit);
+            acct.deposit(deposit);
+
             if (deposit > 0) {
                 System.out.println("You have successfully deposited " + deposit + " balance is " + acct.getBalance());
             }  } else {
-            double balance = acct.withDraw(withDraw);
+            acct.withDraw(withDraw);
             if (withDraw > 0) {
                 System.out.println("You have successfully withdraw " + withDraw +  " balance is " + acct.getBalance());
             }  }

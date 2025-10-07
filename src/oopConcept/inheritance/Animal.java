@@ -2,7 +2,7 @@ package oopConcept.inheritance;
 
 public class Animal {
 
-  private String name;
+  private final String name;
 
   public Animal(String name){
     this.name = name;

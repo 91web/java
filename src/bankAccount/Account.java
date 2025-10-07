@@ -19,20 +19,16 @@ public class Account {
     }
 
 
-    //Method deposit
-
     // Method deposit
-    public double deposit(double amount) {
+    public void deposit(double amount) {
         if (amount >= 0) {
             setBalance(balance + amount);
         } else {
             System.out.println("Amount is less than Zero");
         }
-        return amount;
     }
-
     // Method withdraw
-    public double withDraw(double amount) {
+    public void withDraw(double amount) {
         if (balance < amount) {
             System.out.println("Insufficient fund");
         } else if (amount < 0) {
@@ -40,6 +36,6 @@ public class Account {
         } else {
             setBalance(balance - amount);
         }
-        return amount;
+
     }
 }

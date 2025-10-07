@@ -5,7 +5,7 @@ public class MainTwo {
         Account acct = new Account(100.00);
 
         double deposit = 20;
-       double balance = acct.deposit(deposit);
+        acct.deposit(deposit);
 
         System.out.println("You have successfully deposited " + deposit + " balance is " + acct.getBalance());
     }

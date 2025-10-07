@@ -2,9 +2,11 @@ package oopConcept.abstarct_classes;
 
 public class Rectangle extends Shape{
 
-  private double length;
-  private double breadth;
+  private final double length;
+  private final double breadth;
 
+
+  //constructor
   public Rectangle(double length, double breadth){
     this.length = length;
     this.breadth = breadth;
@@ -20,8 +22,4 @@ public class Rectangle extends Shape{
     return (length + breadth) * 2;
   }
 
-  public void printShapeDetails(){
-    System.out.println("Area is " + getArea());
-    System.out.println("Perimeter is " + getPerimeter());
-  }
 }
