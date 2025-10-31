@@ -1,5 +1,6 @@
 package streamApi;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 public class Employee {
     private  String name;
@@ -20,7 +21,7 @@ public class Employee {
     public String getDepartment() { return department; }
 
     //main method
-    public static void main(String[] args) {
+    public static <list> void main(String[] args) {
 
         List<Employee> employees = List.of(
                 new Employee("Yusuf Babatunde", "Backend"),
@@ -36,8 +37,13 @@ public class Employee {
                 new Employee("Dolapo Mariam", "FrontEnd"),
                 new Employee("George John", "HR" )
         );
-        System.out.println(employees);
-        System.out.println( employees.stream().collect(Collectors.groupingBy(Employee::getDepartment)));
-        System.out.println(employees.stream().collect(Collectors.groupingBy(Employee::getName)));
+        
+        Map<String, List<Employee>> employeesByDept = employees.stream()
+                .collect(Collectors.groupingBy(Employee::getDepartment));
+          System.out.println(employeesByDept);
+
+
+      //  System.out.println( employees.stream().collect(Collectors.groupingBy(Employee::getDepartment)));
+       // System.out.println(employees.stream().collect(Collectors.groupingBy(Employee::getName)));
 }
 }
